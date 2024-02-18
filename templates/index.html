@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+  <table class="table">
+    <h1> {{ namehtml }}</h1>
+    <thead>
+      <tr>
+        <th scope="col">Win</th>
+        <th scope="col">Draw</th>
+        <th scope="col">Lose</th>
+        <th scope="col">Win %</th>
+        <th scope="col">Draw %</th>
+        <th scope="col">Lose %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-info">{{ win_counthtml }}</td>
+        <td class="table-warning">{{ draw_counthtml }}</td>
+        <td class="table-danger">{{ lose_counthtml }}</td>
+        <td class="table-info">{{ win_ratehtml }}</td>
+        <td class="table-warning">{{ draw_ratehtml }}</td>
+        <td class="table-danger">{{ lose_ratehtml }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <form action = "/result" method = "post">
+      <button class = "btn btn-primary" type = "submit" name = "result" value = "win">Win</button>
+      <button class = "btn btn-primary" type = "submit" name = "result" value = "draw">Draw</button>
+      <button class = "btn btn-primary" type = "submit" name = "result" value = "lose">Lose</button>
+  </form>
+ <!-- <form action = "/clear" method = "post">
+    <button class = "btn btn-primary" type = "submit" name = "clear" value = "clear">Clear Table</button>
+  </form> -->
+{% endblock %}
