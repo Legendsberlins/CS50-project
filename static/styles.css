@@ -29,18 +29,6 @@ ul
 {
     color: white
 }
-.options
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.options-one, .options-two
-{
-    display: flex;
-}
 .btn-primary
 {
     margin: 0.5rem;
