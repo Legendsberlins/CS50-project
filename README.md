@@ -1,4 +1,4 @@
-# **Success%:Implementation of a web application that calculate win, draw and lose percentages.**
+# **Success%:Implementation of a web application that calculates win, draw and lose percentages.**
 #### Video: https://youtu.be/L33KbZXHjqc?si=5rueb8PcyJX-UYSJ
 #### Description:
 This web application was implemented using Flask (a python framework) which deals with paths and routes, SQL to keep hold of the database and jinja which is a syntax that implements flask in an HTML file.
